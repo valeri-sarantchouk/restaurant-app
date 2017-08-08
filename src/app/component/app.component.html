@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="container">
+  <app-feature title="Our Unique Culinary Creations">
+      <h2>Fichipizza</h2>
+      <p>A unique combination of Mediterranean and Italian pizza, topped with Mascarphone, proscuitto, figs, grando panado, honey and arugula.</p>
+  </app-feature>
+  <app-feature title="This Month's Promotions" [reverseColumnOrder]="true">
+      <h2>Weekend Grand Buffet</h2>
+      <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+  </app-feature>
+  <app-feature title="Meet our Culinary Specialists">
+      <h2>Tommy McHugh</h2>
+      <h4>Executive Chef</h4>
+      <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Mediterranean-Italian experiences. </p>
+  </app-feature>
+  <app-feature title="Dinner Menu" [reverseColumnOrder]="true">
+    <app-grid [menuItems]="menuItems"></app-grid>
+  </app-feature>
+</div>
+<app-footer></app-footer>

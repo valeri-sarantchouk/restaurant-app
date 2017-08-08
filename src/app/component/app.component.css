@@ -1,0 +1,11 @@
+.jumbotron {
+   color: #ffffff;
+   background-color: #8090d3;
+ }
+.reverse-column-order {
+  display: flex;
+  flex-direction: row-reverse;
+}
+footer div {
+    background-color: #ccc;
+}

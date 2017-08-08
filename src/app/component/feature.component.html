@@ -1,0 +1,10 @@
+<div class="row" [ngClass]="{'reverse-column-order': reverseColumnOrder}">
+  <div class="col-md-8">
+    <ng-content></ng-content>
+    <p><a href="#">More &raquo;</a></p>
+  </div>
+  <div class="col-md-4">
+    <p style="padding:20px;"></p>
+    <h3 align=center>{{title}}</h3>
+  </div>
+</div>
