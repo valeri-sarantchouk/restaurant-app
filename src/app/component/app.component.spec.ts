@@ -1,13 +1,10 @@
-import { TestBed, async, ComponentFixture } from '@angular/core/testing';
-import { AppComponent } from './app.component';
-import { MenuService } from "../service/menu.service";
-import { MenuItem } from "./menu.item";
-import {HeaderComponent} from "./header.component";
-import {FooterComponent} from "./footer.component";
-import {FeatureComponent} from "./feature.component";
-import {GridComponent} from "./grid.component";
+import {NO_ERRORS_SCHEMA} from '@angular/core';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {AppComponent} from './app.component';
+import {MenuService} from "../service/menu.service";
+import {MenuItem} from "./menu.item";
 
-describe('AppComponent', () => {
+describe('AppComponent initialized', () => {
 
   let fixture: ComponentFixture<AppComponent>;
   let component: AppComponent;
@@ -25,12 +22,9 @@ describe('AppComponent', () => {
     }
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent,
-        HeaderComponent,
-        FooterComponent,
-        FeatureComponent,
-        GridComponent
-      ]
+        AppComponent
+      ],
+      schemas: [ NO_ERRORS_SCHEMA ]
     }).overrideComponent(AppComponent, {
       set: {
         providers: [
@@ -47,7 +41,7 @@ describe('AppComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it(`should have service injected as a dependency`, () => {
+  it(`should have retrieved data from the injected service`, () => {
     expect(component.menuItems).toBeDefined();
     expect(component.menuItems).toEqual(data);
   });

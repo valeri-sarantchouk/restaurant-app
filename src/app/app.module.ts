@@ -1,5 +1,4 @@
 import { BrowserModule } from '@angular/platform-browser';
-// import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './component/app.component';
 import { HeaderComponent } from "./component/header.component";
@@ -20,6 +19,5 @@ import { GridComponent } from "./component/grid.component";
   ],
   providers: [],
   bootstrap: [AppComponent]
-  //schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
