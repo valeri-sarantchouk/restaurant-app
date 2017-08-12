@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MenuService } from "../service/menu.service";
-import { MenuItem } from "./menu.item";
+import { MenuItem } from "./main-feature/menu.item";
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +12,10 @@ import { MenuItem } from "./menu.item";
 export class AppComponent {
   menuItems:MenuItem[];
 
-  constructor(private menuService: MenuService) {
+  constructor(private menuService: MenuService, translate: TranslateService) {
     this.menuItems = this.menuService.getMenu();
-    console.log('AppComponent menuItems: ' + JSON.stringify(this.menuItems));
+    translate.setDefaultLang('en');
+    translate.use('en');
+    //console.log('AppComponent menuItems: ' + JSON.stringify(this.menuItems));
   }
 }

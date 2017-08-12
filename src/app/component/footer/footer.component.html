@@ -1,0 +1,37 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h5 [translate]="'FOOTER.LINKS'"></h5>
+        <ul>
+          <li><a href="#" [translate]="'FOOTER.HOME'"></a></li>
+          <li><a href="#" [translate]="'FOOTER.ABOUT'"></a></li>
+          <li><a href="#" [translate]="'FOOTER.MENU'"></a></li>
+          <li><a href="#" [translate]="'FOOTER.CONTACT'"></a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5 [translate]="'FOOTER.OUR_ADDRESS'"></h5>
+        <address>
+          <span [innerHTML]="'FOOTER.ADDRESS' | translate"></span><br>
+          <span [translate]="'FOOTER.TELEPHONE'"></span><span>: +416 1234 5678</span><br>
+          <span [translate]="'FOOTER.FAX'"></span><span>: +416 8765 4321</span><br>
+          <span [translate]="'FOOTER.EMAIL'"></span><span>: <a href="mailto:ilfornello@food.net">ilfornello@food.net</a></span>
+        </address>
+      </div>
+      <div class="col-md-6">
+        <div style="padding: 40px 10px;">
+          <a href="http://google.com/+">Google+</a>
+          <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
+          <a href="http://www.linkedin.com/in/">LinkedIn</a>
+          <a href="http://twitter.com/">Twitter</a>
+          <a href="http://youtube.com/">YouTube</a>
+          <a href="mailto:ilfornello@food.net">Mail</a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center">
+      <p [translate]="'FOOTER.COPYRIGHT'"></p>
+    </div>
+  </div>
+</footer>

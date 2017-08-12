@@ -4,7 +4,7 @@ import {MenuItem} from "./menu.item";
 @Component({
   selector: 'app-grid',
   templateUrl: './grid.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class GridComponent {
   @Input() maxRows;

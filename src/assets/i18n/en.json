@@ -1,0 +1,22 @@
+{
+  "HEADER": {
+    "TITLE": "Ristorante Il Fornello",
+    "CONTENT": "Simple, fresh ingredients, prepared and cooked with love and passion become truly great dishes, from wood-oven baked Neapolitan style pizzas to pastas, entrees!"
+  },
+  "FOOTER": {
+    "LINKS": "Links",
+    "HOME": "Home",
+    "ABOUT": "About",
+    "MENU": "Menu",
+    "CONTACT": "Contact",
+    "OUR_ADDRESS": "Our Address",
+    "ADDRESS": "214, King Street West<br> Downtown, Toronto<br> ONTARIO",
+    "TELEPHONE": "Tel.",
+    "FAX": "Fax",
+    "EMAIL": "Email",
+    "COPYRIGHT": "© Copyright 2015 Ristorante Il Fornello"
+  },
+  "COMMON": {
+    "MORE": "More"
+  }
+}
