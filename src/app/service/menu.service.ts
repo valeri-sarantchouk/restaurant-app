@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {MenuItem} from "../component/main-feature/menu.item";
+import { MenuItem } from "./menu.item";
 
 const MENU_ITEMS: MenuItem[] = [
   { name: 'PRIME RIB', description: 'Premium quality, seasoned, slow-roasted and aged for 28 days. Choice of grilled or au jus.' },

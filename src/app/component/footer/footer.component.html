@@ -13,20 +13,20 @@
       <div class="col-md-3">
         <h5 [translate]="'FOOTER.OUR_ADDRESS'"></h5>
         <address>
-          <span [innerHTML]="'FOOTER.ADDRESS' | translate"></span><br>
-          <span [translate]="'FOOTER.TELEPHONE'"></span><span>: +416 1234 5678</span><br>
-          <span [translate]="'FOOTER.FAX'"></span><span>: +416 8765 4321</span><br>
-          <span [translate]="'FOOTER.EMAIL'"></span><span>: <a href="mailto:ilfornello@food.net">ilfornello@food.net</a></span>
+          <span [innerHTML]="'FOOTER.ADDRESS' | translate" aria-hidden></span><br>
+          <span class="fa fa-phone" aria-hidden></span><span>: +416 1234 5678</span><br>
+          <span class="fa fa-fax" aria-hidden></span><span>: +416 8765 4321</span><br>
+          <span class="fa fa-envelope fa-envelope-black" aria-hidden></span><span>: <a href="mailto:ilfornello@food.net">ilfornello@food.net</a></span>
         </address>
       </div>
       <div class="col-md-6">
-        <div style="padding: 40px 10px;">
-          <a href="http://google.com/+">Google+</a>
-          <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-          <a href="http://www.linkedin.com/in/">LinkedIn</a>
-          <a href="http://twitter.com/">Twitter</a>
-          <a href="http://youtube.com/">YouTube</a>
-          <a href="mailto:ilfornello@food.net">Mail</a>
+        <div class="footer-social-icons">
+          <a target="_new" href="http://google.com/+" class="fa fa-google-plus"></a>
+          <a target="_new" href="http://www.facebook.com/profile.php?id=" class="fa fa-facebook"></a>
+          <a target="_new" href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+          <a target="_new" href="http://twitter.com/" class="fa fa-twitter"></a>
+          <a target="_new" href="http://youtube.com/" class="fa fa-youtube"></a>
+          <a target="_new" href="mailto:ilfornello@food.net" class="fa fa-envelope fa-envelope-blue"></a>
         </div>
       </div>
     </div>

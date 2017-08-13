@@ -1,7 +1,7 @@
 import {NO_ERRORS_SCHEMA} from '@angular/core';
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {FeatureComponent} from './feature.component';
-import {MenuItem} from "./menu.item";
+import {MenuItem} from "../../service/menu.item";
 import {By} from "@angular/platform-browser";
 
 describe('FeatureComponent bindings', () => {

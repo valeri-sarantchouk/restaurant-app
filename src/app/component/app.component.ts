@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuService } from "../service/menu.service";
-import { MenuItem } from "./main-feature/menu.item";
+import { MenuItem } from "../service/menu.item";
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

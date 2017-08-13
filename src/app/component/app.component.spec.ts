@@ -2,7 +2,7 @@ import {NO_ERRORS_SCHEMA} from '@angular/core';
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {AppComponent} from './app.component';
 import {MenuService} from "../service/menu.service";
-import {MenuItem} from "./main-feature/menu.item";
+import {MenuItem} from "../service/menu.item";
 
 describe('AppComponent initialized', () => {
 
