@@ -1,22 +1,22 @@
 import {NO_ERRORS_SCHEMA} from '@angular/core';
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {AppComponent} from './app.component';
-import {MenuService} from "../service/menu.service";
-import {MenuItem} from "../service/menu.item";
+import {FoodMenuService} from "../service/food.menu.service";
+import {FoodMenuItem} from "../service/food.menu.item";
 
 describe('AppComponent initialized', () => {
 
   let fixture: ComponentFixture<AppComponent>;
   let component: AppComponent;
 
-  let data: MenuItem[] = [
+  let data: FoodMenuItem[] = [
     { name: 'itemA', description: 'itemA desc' },
     { name: 'itemB', description: 'itemB desc' }
   ];
 
   beforeEach(async(() => {
     class MenuServiceStub {
-      getMenu(): MenuItem[] {
+      getMenu(): FoodMenuItem[] {
         return data;
       }
     }
@@ -28,7 +28,7 @@ describe('AppComponent initialized', () => {
     }).overrideComponent(AppComponent, {
       set: {
         providers: [
-          { provide: MenuService, useClass: MenuServiceStub}
+          { provide: FoodMenuService, useClass: MenuServiceStub}
         ]
       }
     }).compileComponents().then(() => {

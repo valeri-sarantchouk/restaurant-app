@@ -1,6 +1,18 @@
+.nav-menu {
+  background-color: #7070a0;
+}
+.nav-item, .nav-link {
+  color: #ffffff;
+}
 .jumbotron {
   color: #ffffff;
-  background-color: #8090d3;
+  background-color: #8090c9;
+}
+.header-title {
+  margin-top: 20px;
+}
+.header-content {
+  margin-top: 20px;
 }
 .reverse-column-order {
   display: flex;

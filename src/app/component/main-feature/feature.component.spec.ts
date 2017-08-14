@@ -1,7 +1,7 @@
 import {NO_ERRORS_SCHEMA} from '@angular/core';
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {FeatureComponent} from './feature.component';
-import {MenuItem} from "../../service/menu.item";
+import {FoodMenuItem} from "../../service/food.menu.item";
 import {By} from "@angular/platform-browser";
 
 describe('FeatureComponent bindings', () => {
@@ -10,7 +10,7 @@ describe('FeatureComponent bindings', () => {
   let component: FeatureComponent;
   let titleElement;
 
-  let data: MenuItem[] = [
+  let data: FoodMenuItem[] = [
     { name: 'itemA', description: 'itemA desc' },
     { name: 'itemB', description: 'itemB desc' }
   ];

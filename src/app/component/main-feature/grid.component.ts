@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {MenuItem} from "../../service/menu.item";
+import {FoodMenuItem} from "../../service/food.menu.item";
 
 @Component({
   selector: 'app-grid',
@@ -8,5 +8,5 @@ import {MenuItem} from "../../service/menu.item";
 })
 export class GridComponent {
   @Input() maxRows;
-  @Input() menuItems:MenuItem[];
+  @Input() menuItems:FoodMenuItem[];
 }

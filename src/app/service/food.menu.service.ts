@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { MenuItem } from "./menu.item";
+import { FoodMenuItem } from "./food.menu.item";
 
-const MENU_ITEMS: MenuItem[] = [
+const MENU_ITEMS: FoodMenuItem[] = [
   { name: 'PRIME RIB', description: 'Premium quality, seasoned, slow-roasted and aged for 28 days. Choice of grilled or au jus.' },
   { name: 'COWBOY RIB STEAK', description: 'Signature steak, aged for 28 days, well-marbled for great flavour.' },
   { name: 'GOAT CHEESE TOP SIRLOIN', description: 'Crumbled goat cheese, Herbes de Provence, chopped walnuts.' },
@@ -13,8 +13,8 @@ const MENU_ITEMS: MenuItem[] = [
 ];
 
 @Injectable()
-export class MenuService {
-  getMenu(): MenuItem[] {
+export class FoodMenuService {
+  getFoodMenu(): FoodMenuItem[] {
     return MENU_ITEMS;
   }
 }

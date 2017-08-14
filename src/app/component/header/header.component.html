@@ -1,10 +1,22 @@
 <header>
+  <div ngClass="nav-menu">
+    <nav class="navbar sticky-top navbar-toggleable-md">
+      <div class="container">
+        <div class="collapse navbar-collapse">
+          <ng-template ngFor let-item [ngForOf]="navMenuItems" let-i="index" >
+            <div class="nav-item"  [ngClass]="{'active': i === 0}">
+              <a class="nav-link" href="#">{{ item.id | translate }}</a>
+            </div>
+          </ng-template>
+        </div>
+      </div>
+    </nav>
+  </div>
   <div class="jumbotron">
     <div class="container">
       <div>
-        <h1 [translate]="'HEADER.TITLE'"></h1>
-        <p style="padding:40px;"></p>
-        <p [translate]="'HEADER.CONTENT'"></p>
+        <h1 class="header-title" [translate]="'HEADER.TITLE'"></h1>
+        <p class="header-content" [translate]="'HEADER.CONTENT'"></p>
       </div>
       <div>
       </div>
