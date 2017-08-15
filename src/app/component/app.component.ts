@@ -27,4 +27,8 @@ export class AppComponent {
     this.foodMenuItems = this.foodMenuService.getFoodMenu();
     //console.log('AppComponent menuItems: ' + JSON.stringify(this.menuItems));
   }
+
+  produceSpecialOfTheWeek() {
+    return "special of the week";
+  }
 }

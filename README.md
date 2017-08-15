@@ -1,4 +1,6 @@
-# Scotiabank Frontend Assignment
+# Restaurant Frontend App
+
+## This app has been built with angular-cli and demonstrates Angular 4 features in a imaginary restaurant SPA.
 
 ## To run the app
 
